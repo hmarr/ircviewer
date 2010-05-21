@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>IRC Viewer</title>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/ircviewer.js"></script>
+        <link rel="stylesheet" href="static/style.css" />
+        <script type="text/javascript">
+        $(function() {
+            var irc = new IRCViewer($('#messages'), 100);
+            irc.run();
+        });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>IRC Viewer</h1>
+            <div id="messages">
+            </div>
+            <div id="footer">Copyright &copy; Harry Marr 2010</div>
+        </div>
+    </body>
+</html>
